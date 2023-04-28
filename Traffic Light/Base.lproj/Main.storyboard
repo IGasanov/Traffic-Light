@@ -49,6 +49,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Start">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="StartButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nss-Bg-urr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +68,12 @@
                             <constraint firstItem="dCL-fK-Y6b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sS3-QZ-0tw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="dCL-fK-Y6b" id="cn6-5e-0P7"/>
+                        <outlet property="redLight" destination="lfB-IB-wtH" id="cvw-Ty-5qR"/>
+                        <outlet property="startButton" destination="LPd-dr-ITx" id="iyB-Jk-vac"/>
+                        <outlet property="yellowLight" destination="Nf8-6Y-7cW" id="TsH-pe-wof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
